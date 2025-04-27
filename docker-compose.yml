@@ -11,6 +11,7 @@ services:
       - 443:443
     networks:
       - webssh_network
+    restart: unless-stopped
 
   ssh-server:
     image: linuxserver/openssh-server:latest
@@ -28,6 +29,7 @@ services:
       - webssh_network
     expose:
         - 2222
+    restart: unless-stopped
 
   wetty:
     image: wettyoss/wetty
@@ -41,5 +43,6 @@ services:
       - webssh_network
     expose:
         - 3000
+    restart: unless-stopped
 networks:
   webssh_network:
