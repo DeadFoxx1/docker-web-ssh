@@ -5,8 +5,8 @@ services:
     container_name: nginx-reverse-proxy
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./ssl/certs/nginx_reverse_proxy.crt:/etc/ssl/certs/nginx_reverse_proxy.crt
-      - ./ssl/private/nginx_reverse_proxy.key:/etc/ssl/private/nginx_reverse_proxy.key
+      - ./ssl/nginx-selfsigned.crt:/etc/ssl/certs/nginx-selfsigned.crt
+      - ./ssl/nginx-selfsigned.key:/etc/ssl/private/nginx-selfsigned.key
     ports:
       - 443:443
     networks:
