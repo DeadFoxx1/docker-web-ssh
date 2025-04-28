@@ -18,7 +18,7 @@ and the password is just password
 
 # Sources:
 I based this project on the following sources:  
-[how-to-set-up-web-based-ssh](https://linuxiac.com/how-to-set-up-web-based-ssh/)  
+[how-to-set-up-web-based-ssh](https://linuxiac.com/how-to-set-up-web-based-ssh/)(they use caddy instead of nginx)  
 [how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-20-04-1](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-20-04-1)  
 [reverse-proxy-nginx-docker-compose](https://weberdominik.com/blog/reverse-proxy-nginx-docker-compose)  
 as well as countless stack overflow threads  
