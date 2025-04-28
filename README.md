@@ -16,6 +16,10 @@ the user is Dfox (because that meeeee)
 and the password is just password  
 (both username and password can be easily changed in the docker file btw)  
 
+# Note:
+This is an ssh client but it is not a direct access into the ssh of the host machine.  
+To access the host machine you still need to have ssh setup on the host and run ```ssh user@hostmachine```  
+
 # Sources:
 I based this project on the following sources:  
 (I'm just experimenting here so please check them out they were a huuuuge help)  
