@@ -6,9 +6,9 @@ I looked at guacamole at first but the official image isn't supported for arm64 
 
 # About:
 A docker network with:   
-wetty as the terminal,  
-openssh for the ssh server,  
-and a reverse proxy using nginx  
+[wetty](https://github.com/butlerx/wetty) as the terminal,  
+[openssh](https://github.com/linuxserver/docker-openssh-server) for the ssh server,  
+and a reverse proxy using [nginx](https://hub.docker.com/_/nginx)  
 
 Nginx is open on port 443 and the ssh client can be accessed using https://hostname/ssh  
 (in my case it was https://raspi.local/ssh because thats what my server's hostname was)  
@@ -18,11 +18,13 @@ and the password is just password
 
 # Sources:
 I based this project on the following sources:  
-[how-to-set-up-web-based-ssh](https://linuxiac.com/how-to-set-up-web-based-ssh/)(they use caddy instead of nginx)  
+(I'm just experimenting here so please check them out they were a huuuuge help)  
+[how-to-set-up-web-based-ssh](https://linuxiac.com/how-to-set-up-web-based-ssh/) (they use caddy instead of nginx)  
 [how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-20-04-1](https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-20-04-1)  
 [reverse-proxy-nginx-docker-compose](https://weberdominik.com/blog/reverse-proxy-nginx-docker-compose)  
+[Run WeTTY behind nginx](https://butlerx.github.io/wetty/nginx#run-wetty-behind-nginx)  
 as well as countless stack overflow threads  
-I'm just experimenting here so please check them out they were a huuuuge help
+
 
 # Setup:
 ```sh
