@@ -11,7 +11,7 @@ services:
       - TZ=Etc/UTC
       - PASSWORD_ACCESS=true
       - USER_NAME=Dfox
-      - SUDO_ACCESS=true
+      - SUDO_ACCESS=false
       - USER_PASSWORD=password
     networks:
       - webssh_network
