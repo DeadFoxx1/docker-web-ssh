@@ -1,4 +1,6 @@
-name: ssh
+name: reverse-proxy
+
+# create proxy container
 services:
   nginx:
     image: nginx:latest
@@ -9,40 +11,12 @@ services:
       - ./ssl/nginx-selfsigned.key:/etc/ssl/private/nginx-selfsigned.key
     ports:
       - 443:443
+    # make sure to add the network for each service
     networks:
       - webssh_network
+
     restart: unless-stopped
 
-  ssh-server:
-    image: linuxserver/openssh-server:latest
-    container_name: ssh-server
-    hostname: ssh-server
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
-      - PASSWORD_ACCESS=true
-      - USER_NAME=Dfox
-      - SUDO_ACCESS=true
-      - USER_PASSWORD=password
-    networks:
-      - webssh_network
-    expose:
-        - 2222
-    restart: unless-stopped
-
-  wetty:
-    image: wettyoss/wetty
-    container_name: wetty
-    environment:
-      - SSHHOST=ssh-server
-      - SSHPORT=2222
-      - SSHUSER=Dfox
-      - BASE=/ssh
-    networks:
-      - webssh_network
-    expose:
-        - 3000
-    restart: unless-stopped
-networks:
-  webssh_network:
+# create services to go behind the proxy
+include:
+  - ssh.yml
