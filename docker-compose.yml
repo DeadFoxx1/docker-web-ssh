@@ -14,9 +14,11 @@ services:
     # make sure to add the network for each service
     networks:
       - webssh_network
+      - portainer_network
 
     restart: unless-stopped
 
 # create services to go behind the proxy
 include:
   - ssh.yml
+  - portainer.yml
