@@ -15,6 +15,7 @@ services:
     networks:
       - webssh_network
       - portainer_network
+      - solitaire_network
 
     restart: unless-stopped
 
@@ -22,3 +23,4 @@ services:
 include:
   - ssh.yml
   - portainer.yml
+  - solitaire.yml
