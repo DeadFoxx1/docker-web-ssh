@@ -1,0 +1,16 @@
+name: test
+
+services:
+  test:
+    #build:
+     #   ./python_solitaire/
+    container_name: test
+
+    networks:
+      - test_network
+
+    expose:
+        - 80
+
+networks:
+  test_network:
