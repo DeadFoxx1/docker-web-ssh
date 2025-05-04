@@ -12,10 +12,12 @@ services:
       - ./solitaire_static:/usr/share/nginx/solitaire_static
     ports:
       - 443:443
+      - 19132:19132/udp
     # make sure to add the network for each service
     networks:
       - webssh_network
       - portainer_network
+      - minecraft_network
 
     restart: unless-stopped
 
@@ -23,3 +25,4 @@ services:
 include:
   - ssh.yml
   - portainer.yml
+  - minectaft.yml

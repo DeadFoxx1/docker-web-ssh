@@ -10,11 +10,5 @@ services:
     ports:
       - 80:80
     # make sure to add the network for each service
-    networks:
-      - test_network
 
     restart: unless-stopped
-
-# create services to go behind the proxy
-include:
-  - test.yml

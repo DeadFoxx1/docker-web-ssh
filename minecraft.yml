@@ -1,0 +1,21 @@
+name: minecraft
+
+services:
+  minecraft:
+    container_name: minecraft
+    image: itzg/minecraft-bedrock-server:latest
+    stdin_open: true
+    tty: true
+    environment:
+      EULA: "TRUE"
+      LEVEL_NAME: "BEST ASS WORLD"
+    volumes:
+      - /mcdata:/data
+    expose:
+      - 19132/udp
+    networks:
+      - minecraft_network
+    restart: unless-stopped
+
+networks:
+  minecraft_network:
