@@ -10,7 +10,7 @@ services:
       EULA: "TRUE"
       LEVEL_NAME: "BEST ASS WORLD"
     volumes:
-      - /mcdata:/data
+      - ./mcdata:/data
     expose:
       - 19132/udp
     networks:
