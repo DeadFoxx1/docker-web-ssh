@@ -9,6 +9,8 @@ services:
     environment:
       EULA: "TRUE"
       LEVEL_NAME: "BEST ASS WORLD"
+      CORRECT_PLAYER_MOVEMENT: "true"
+      SERVER_AUTHORITATIVE_BLOCK_BREAKING: "true"
     volumes:
       - ./mcdata:/data
     expose:
