@@ -25,4 +25,4 @@ services:
 include:
   - ssh.yml
   - portainer.yml
-  - minectaft.yml
+  - minecraft.yml
