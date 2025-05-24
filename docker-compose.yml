@@ -18,7 +18,7 @@ services:
       - webssh_network
       - portainer_network
       - minecraft_network
-      - pihole_interface_network
+      - pihole_network
 
     restart: unless-stopped
 

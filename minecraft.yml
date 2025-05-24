@@ -8,9 +8,12 @@ services:
     tty: true
     environment:
       EULA: "TRUE"
-      LEVEL_NAME: "BEST ASS WORLD"
+      LEVEL_NAME: "BEST ASS WORLD SEASON2"
+      SERVER_NAME: "BEST ASS SERVER"
+      LEVEL_SEED: "835314931"
       CORRECT_PLAYER_MOVEMENT: "true"
       SERVER_AUTHORITATIVE_BLOCK_BREAKING: "true"
+      DIFFICULTY: "hard"
     volumes:
       - ./mcdata:/data
     expose:
