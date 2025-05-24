@@ -18,6 +18,7 @@ services:
       - webssh_network
       - portainer_network
       - minecraft_network
+      - pihole_interface_network
 
     restart: unless-stopped
 
@@ -26,3 +27,4 @@ include:
   - ssh.yml
   - portainer.yml
   - minecraft.yml
+  - pihole.yml
