@@ -19,8 +19,5 @@ services:
     expose:
       - 19132/udp
     networks:
-      - minecraft_network
+      - fox_net
     restart: unless-stopped
-
-networks:
-  minecraft_network:

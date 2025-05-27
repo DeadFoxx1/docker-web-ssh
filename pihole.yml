@@ -19,7 +19,4 @@ services:
       - NET_ADMIN
     restart: unless-stopped
     networks:
-      - pihole_network
-
-networks:
-  pihole_network:
+      - fox_net
