@@ -11,10 +11,7 @@ services:
     expose:
       - 9000
     networks:
-      - portainer_network
+      - fox_net
 
 volumes:
   portainer_data:
-
-networks:
-  portainer_network:

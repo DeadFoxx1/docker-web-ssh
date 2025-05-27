@@ -15,13 +15,12 @@ services:
       - 19132:19132/udp
     # make sure to add the network for each service
     networks:
-      - webssh_network
-      - portainer_network
-      - minecraft_network
-      - pihole_network
+      - fox_net
 
     restart: unless-stopped
 
+networks:
+    fox_net:
 # create services to go behind the proxy
 include:
   - ssh.yml
