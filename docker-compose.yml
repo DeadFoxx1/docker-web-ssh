@@ -13,7 +13,7 @@ services:
     ports:
       - 443:443
       - 19132:19132/udp
-    # make sure to add the network for each service
+      - 7777:7777
     networks:
       - fox_net
 
@@ -27,3 +27,4 @@ include:
   - portainer.yml
   - minecraft.yml
   - pihole.yml
+  -terraria.yml

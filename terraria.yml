@@ -1,0 +1,17 @@
+name: terraria
+
+services:
+  terraria:
+    container_name: terraria
+    image: ryshe/terraria:latest
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./terraria_world:/root/.local/share/Terraria/Worlds
+    command: -world /root/.local/share/Terraria/Worlds/Dfox_world.wld -autocreate 2
+    expose:
+        - 7777
+    networks:
+        - fox_net
+    restart: unless-stopped
+
