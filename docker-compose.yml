@@ -27,4 +27,4 @@ include:
   - portainer.yml
   - minecraft.yml
   - pihole.yml
-  -terraria.yml
+  - terraria.yml
