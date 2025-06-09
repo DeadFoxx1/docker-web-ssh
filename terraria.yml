@@ -11,6 +11,7 @@ services:
     command: -world /root/.local/share/Terraria/Worlds/Dfox_world.wld -autocreate 2
     expose:
         - 7777
+        - 7878
     networks:
         - fox_net
     restart: unless-stopped
