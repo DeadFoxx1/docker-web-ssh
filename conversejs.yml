@@ -1,0 +1,11 @@
+name: conversejs
+
+services:
+  conversejs:
+    image: dfox3/conversejs:linux_arm64
+    container_name: conversejs
+    expose:
+        - 80
+    networks:
+        - fox_net
+    
