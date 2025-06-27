@@ -1,5 +1,5 @@
 # My homelab!
-See the [wiki](https://github.com/DeadFoxx1/home-lab-ig/wiki) for details :3  
+See the [wiki](https://github.com/DeadFoxx1/home-lab-ig/wiki) (out of date :p) for details :3  
 
 # Setup:
 ```sh
