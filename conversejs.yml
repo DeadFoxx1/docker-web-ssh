@@ -5,7 +5,7 @@ services:
     image: dfox3/conversejs:linux_arm64
     container_name: conversejs
     expose:
-        - 80
+        - 8008
     networks:
         - fox_net
     

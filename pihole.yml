@@ -6,8 +6,9 @@ services:
     ports:
       - 53:53/tcp
       - 53:53/udp
-    expose:
-      - 80/tcp
+      - 80:80/tcp
+#    expose:
+ #     - 80/tcp
     environment:
       TZ: "US/Central"
       FTLCONF_webserver_api_password: "password"

@@ -23,9 +23,10 @@ networks:
     fox_net:
 # create services to go behind the proxy
 include:
+#  - conversejs.yml
   - ssh.yml
   - portainer.yml
   - minecraft.yml
   - pihole.yml
   - terraria.yml
-  - xmpp-web.yml
+#  - xmpp-web.yml
