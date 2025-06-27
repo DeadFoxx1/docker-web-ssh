@@ -2,11 +2,12 @@ name: xmpp-web
 
 services:
   xmpp-web:
+    container_name: xmpp-web
     image: nioc/xmpp-web:latest
     expose:
       - 80
     environment:
-      - XMPP_WS=https://xmpp.raspi.home/websocket
+      - APP_IS_TRANSPORTS_USER_ALLOWED=true
     networks:
       - fox_net
     restart: unless-stopped
