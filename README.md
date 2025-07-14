@@ -6,7 +6,7 @@ See the [wiki](https://github.com/DeadFoxx1/home-lab-ig/wiki) (out of date :p) f
 git clone https://github.com/DeadFoxx1/home-lab-ig.git  
 cd home-lab-ig
 ```
-I didn't feel like figuring out ssl with letsencrypt or somthing so I opted for self signed:  
+I didn't feel like figuring out ssl with letsencrypt or something so I opted for self signed:  
 (these will be expected by the docker compose file)
 ```sh
 mkdir ssl  
